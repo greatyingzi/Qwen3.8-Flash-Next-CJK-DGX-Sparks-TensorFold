@@ -5,6 +5,9 @@
 > Measured on two DGX Sparks: Chinese decode **+38% to +107%**, English **-2 to -3%**, replies **byte-identical**
 > (`tools/exact.py` passes). Read **[CJK-DRAFT-VOCAB.md](CJK-DRAFT-VOCAB.md)** for the change, the measurements and how to
 > reproduce them. `tools/sparkdash_decode_bench.py` re-measures the published decode table in plain Python.
+> **Upstream:** recipe and scripts by Mia's AI Lab; the engine is [TensorFold](https://github.com/ashhart/TensorFold)'s
+> Zig runtime by Ash Hart and contributors; the checkpoint is NVIDIA's NVFP4 build of Qwen3.8-Flash-Next. Full list in
+> `CREDITS.md` (kept as it ships) and `NOTICE` (our change recorded).
 
 
 <p align="center">

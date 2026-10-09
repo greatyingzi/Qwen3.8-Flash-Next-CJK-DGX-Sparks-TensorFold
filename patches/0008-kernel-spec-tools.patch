@@ -1,3 +1,7 @@
+# MODIFIED by greatyingzi (2026-10-09): the draft vocabulary is 135,040 ids (the shipped list unioned with every
+# id whose tokenizer text holds CJK) and the widths that carry it are widened (135040 / 67520).
+# Original file: MiaAI-Lab's Qwen3.8-Flash-Dual-DGX-Sparks-TensorFold recipe (Apache-2.0). See NOTICE and
+# CJK-DRAFT-VOCAB.md.
 TensorFold db281878ddb8..37763dfc3ee3 (37763df): kernel-spec-tools
 Apply from the checkout root with: git apply 0008-kernel-spec-tools.patch
 
