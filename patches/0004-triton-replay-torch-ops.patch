@@ -23,7 +23,7 @@ index 0000000000000000000000000000000000000000..1d833bebc295b1fbcba81644ac154bb1
 +from ops_ffi import pointer, bind, P, U
 +
 +# the draft head (79,591 ids; two ranks' shares 39,796 / 39,795), a rank's lm_head share at two ranks, the full head
-+WIDTHS = (79591, 39796, 39795, 124160, 248320, 1000, 4096)
++WIDTHS = (79591, 39796, 39795, 135040, 67520, 124160, 248320, 1000, 4096)
 +ROWS = tuple(range(1, 17))
 +
 +OUTSIDE_SOURCES = [{
@@ -214,7 +214,7 @@ index 0000000000000000000000000000000000000000..3d64b38a2e64e2cfd0490bf09f5c6633
 +
 +    # logits.float(): the head rows (TP=1 vocab, a TP=2 rank's half), the draft head's row
 +    heads = [vocab, vocab // 2]
-+    drafts = [79591, 39796, 39795]
++    drafts = [79591, 39796, 39795, 135040, 67520]
 +    for columns in heads + drafts:
 +        for rows in (1, 16):
 +            x = (torch.randn((rows, columns), device="cuda") * 4).to(torch.bfloat16)

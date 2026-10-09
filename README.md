@@ -1,5 +1,12 @@
 <h1 align="center">Qwen3.8-Flash-Next on two DGX Sparks with TensorFold</h1>
 
+> **This repository is a fork.** It is [Mia's AI Lab's recipe](https://github.com/MiaAI-Lab/Qwen3.8-Flash-Dual-DGX-Sparks-TensorFold)
+> (Apache-2.0 — everything below is hers) with one addition: a **CJK-extended draft vocabulary** for the TensorFold Zig engine.
+> Measured on two DGX Sparks: Chinese decode **+38% to +107%**, English **-2 to -3%**, replies **byte-identical**
+> (`tools/exact.py` passes). Read **[CJK-DRAFT-VOCAB.md](CJK-DRAFT-VOCAB.md)** for the change, the measurements and how to
+> reproduce them. `tools/sparkdash_decode_bench.py` re-measures the published decode table in plain Python.
+
+
 <p align="center">
   <sub>by <a href="https://x.com/MiaAI_lab">Mia's AI Lab</a></sub>
   <br><br>

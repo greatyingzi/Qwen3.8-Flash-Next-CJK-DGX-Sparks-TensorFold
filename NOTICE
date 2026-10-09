@@ -79,3 +79,13 @@ Third-party software in the image
   (as described above), not the software in the image.
 
 See CREDITS.md for everyone this project builds on.
+
+-------------------------------------------------------------------------------
+This distribution is a derivative of Mia's AI Lab's recipe for Qwen3.8-Flash-Next on two DGX Sparks
+(github.com/MiaAI-Lab/Qwen3.8-Flash-Dual-DGX-Sparks-TensorFold, Apache-2.0), with modifications:
+
+  2026-10-09  the TensorFold Zig engine's embedded draft vocabulary is replaced by a CJK-extended list
+              (135,040 ids: the shipped list unioned with every id whose tokenizer text holds CJK), and the
+              three widths that carry it are widened accordingly (patches 0003 / 0004 / 0008). No weights are
+              redistributed and no other behaviour changes.
+-------------------------------------------------------------------------------
